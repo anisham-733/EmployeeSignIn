@@ -41,3 +41,7 @@ EmployeeSignIn/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 EmployeeSignIn/obj/EmployeeSignIn.csproj.nuget.dgspec.json
 EmployeeSignIn/obj/EmployeeSignIn.csproj.nuget.g.targets
 EmployeeSignIn/obj/project.assets.json
+EmployeeSignIn/obj/Debug/netcoreapp3.1/EmployeeSignIn.csproj.BuildWithSkipAnalyzers
+EmployeeSignIn/obj/Debug/netcoreapp3.1/project.razor.vs.json
+EmployeeSignIn/obj/Debug/netcoreapp3.1/Razor/Views/Employee/Main.cshtml.g.cs
+EmployeeSignIn/obj/Debug/netcoreapp3.1/Razor/Views/Employee/SignIn.cshtml.g.cs

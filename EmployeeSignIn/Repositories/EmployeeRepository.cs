@@ -17,6 +17,8 @@ namespace EmployeeSignIn.Repositories
 
         public IEnumerable<EmployeeDetails> GetAllEmployees()
         {
+
+
             var employees=_DbContext.EmployeeDetails.ToList();
             return employees;
         }
