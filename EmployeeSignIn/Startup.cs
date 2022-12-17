@@ -1,4 +1,6 @@
-using EmployeeSignIn.Models;
+using EmployeeSignIn.DBContext;
+using EmployeeSignIn.Repositories;
+using EmployeeSignIn.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +29,8 @@ namespace EmployeeSignIn
         {
             services.AddControllersWithViews();
             services.AddDbContext<EmployeeSigningSystemContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conn")));
+            services.AddScoped<IEmployeeService,EmployeeService>(); 
+            services.AddScoped<IEmployeeRepository,EmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +57,7 @@ namespace EmployeeSignIn
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Employee}/{action=Main}/{id?}");
             });
         }
     }
